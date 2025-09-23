@@ -210,7 +210,7 @@ export default component$(() => {
 
       {/* CTA */}
       <section class="px-6 py-16 gradient-hero text-white relative">
-        <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0 opacity-20">
           <div class="grid grid-cols-6 grid-rows-6 h-full w-full">
             {Array.from({ length: 36 }).map((_, i) => (
               <div key={i} class="border border-white/20"></div>
