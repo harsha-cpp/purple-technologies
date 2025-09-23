@@ -36,16 +36,14 @@ export default component$(() => {
   return (
     <header class={{
       'sticky top-0 z-50 transition-colors bg-white/90 backdrop-blur border-b border-gray-100': true,
-      'shadow-sm': scrolled.value,
     }}>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           {/* Logo and version */}
           <div class="flex items-center gap-2">
             <Link href="/" class="flex items-center gap-2">
-              <span class="font-semibold tracking-tight text-gray-900">Purple Technologies</span>
+              <span class="font-bold tracking-tight text-gray-900 text-2xl">Purple Technologies</span>
             </Link>
-            <span class="text-xs px-1.5 py-0.5 bg-gray-100 rounded text-gray-500 font-medium">v2.0</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -55,7 +53,7 @@ export default component$(() => {
                 key={l.href}
                 href={l.href}
                 class={isActive(l.href)
-                  ? 'text-[#5E4FDB] font-medium'
+                  ? 'text-[#5E4FDB] font-semibold'
                   : 'text-gray-600 hover:text-[#5E4FDB] transition-colors'}
               >
                 {l.label}

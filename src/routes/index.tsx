@@ -22,7 +22,7 @@ export default component$(() => {
         <div class="max-w-5xl mx-auto text-center space-y-4 relative z-10 py-10">
           <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-balance leading-tight text-gray-900">
             Build smarter, scale faster
-            <br />with Purple Technologies template.
+            <br />with Purple Technologies
           </h1>
           <p class="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
             Purple Technologies simplifies your business growth with a flexible, easy-to-use
@@ -210,7 +210,7 @@ export default component$(() => {
 
       {/* CTA */}
       <section class="px-6 py-16 gradient-hero text-white relative">
-        <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0 opacity-20">
           <div class="grid grid-cols-6 grid-rows-6 h-full w-full">
             {Array.from({ length: 36 }).map((_, i) => (
               <div key={i} class="border border-white/20"></div>

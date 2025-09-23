@@ -32,7 +32,7 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  opacity: 0.18; /* increased for better visibility */
+  opacity: 0.3; /* increased for better visibility */
   pointer-events: none;
 }
 

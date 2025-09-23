@@ -97,24 +97,13 @@ export default component$(() => {
             </ul>
           </div>
 
-          <div>
-            <h4 class="font-bold mb-4 text-gray-500 text-sm uppercase tracking-wider">NEWSLETTER</h4>
-            <p class="text-gray-700 font-medium mb-4">You read this far, might as well sign up.</p>
-            <div class="flex gap-2">
-              <input
-                type="email"
-                placeholder="your@email.com"
-                class="flex-1 bg-white border-b border-gray-300 pb-2 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-gray-500"
-              />
-              <button class="btn-primary font-medium px-4 py-2 rounded">Sign up</button>
-            </div>
-          </div>
+          
         </div>
 
         <div class="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t border-gray-200">
-          <div class="text-gray-500 text-sm font-medium">©2025 PURPLE TECHNOLOGIES. ALL RIGHTS RESERVED.</div>
-          <div class="text-gray-500 text-sm font-medium hover:text-[#5E4FDB] transition-colors duration-300 cursor-pointer">LINKEDIN, TWITTER, GITHUB</div>
-          <div class="text-gray-500 text-sm font-medium">BUILT WITH INNOVATION</div>
+          <div class="text-[#5E4FDB] text-sm font-semibold ">©2025 PURPLE TECHNOLOGIES. ALL RIGHTS RESERVED.</div>
+          <div class="text-[#5E4FDB] text-sm font-semibold hover:text-[#5E4FDB] transition-colors duration-300 cursor-pointer">LINKEDIN, TWITTER, GITHUB</div>
+          <div class="text-[#5E4FDB] text-sm font-semibold">BUILT WITH INNOVATION</div>
         </div>
 
         {/* Large watermark text */}
