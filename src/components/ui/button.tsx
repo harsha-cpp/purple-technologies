@@ -1,4 +1,4 @@
-import { component$, Slot, useStylesScoped$ } from '@builder.io/qwik';
+import { component$, Slot } from '@builder.io/qwik';
 
 export type ButtonProps = {
   variant?: 'default' | 'outline' | 'ghost';

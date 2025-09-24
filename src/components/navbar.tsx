@@ -14,11 +14,11 @@ const navLinks = [
 
 export default component$(() => {
   const loc = useLocation();
-  const q = useSignal('');
   const mobileMenuOpen = useSignal(false);
   const scrolled = useSignal(false);
 
   // Turn navbar solid after scrolling past hero area
+  // eslint-disable-next-line qwik/no-use-visible-task
   useVisibleTask$(() => {
     const onScroll = () => {
       scrolled.value = window.scrollY > 8;

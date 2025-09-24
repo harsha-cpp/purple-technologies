@@ -37,7 +37,7 @@ export default component$(() => {
                   <Link href={`/blog/${featuredPost.id}`}><Button>Read Article</Button></Link>
                 </div>
                 <div class="aspect-video bg-gray-50 rounded-xl overflow-hidden">
-                  <img src={featuredPost.image} alt={featuredPost.title} class="w-full h-full object-cover" loading="lazy" />
+                  <img src={featuredPost.image} alt={featuredPost.title} class="w-full h-full object-cover" loading="lazy" width="400" height="200" />
                 </div>
               </div>
             </div>
@@ -47,7 +47,7 @@ export default component$(() => {
             {regularPosts.map((post) => (
               <article key={post.id} class="rounded-xl border border-gray-200 overflow-hidden bg-white">
                 <div class="aspect-video bg-gray-50">
-                  <img src={post.image} alt={post.title} class="w-full h-full object-cover" loading="lazy" />
+                  <img src={post.image} alt={post.title} class="w-full h-full object-cover" loading="lazy" width="400" height="200" />
                 </div>
                 <div class="p-6">
                   <span class="inline-block text-xs px-2 py-1 rounded-md bg-gray-100 text-gray-700 border border-gray-200 mb-2">{post.category}</span>

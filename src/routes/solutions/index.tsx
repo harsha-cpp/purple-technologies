@@ -87,7 +87,7 @@ export default component$(() => {
               <div class="flex-1">
                 <div class="rounded-xl border border-gray-200 p-4 bg-white">
                   <div class="aspect-[4/3] bg-gray-50 rounded-lg overflow-hidden">
-                    <img src={s.image} alt={s.title} class="w-full h-full object-cover" loading="lazy" />
+                    <img src={s.image} alt={s.title} class="w-full h-full object-cover" loading="lazy" width="600" height="400" />
                   </div>
                 </div>
               </div>

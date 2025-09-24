@@ -60,7 +60,7 @@ export default component$(() => {
             {team.map((m) => (
               <div key={m.name} class="rounded-xl border border-gray-200 p-6 text-center bg-white">
                 <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gray-100">
-                  <img src={m.image} alt={m.name} class="w-full h-full object-cover" loading="lazy" />
+                  <img src={m.image} alt={m.name} class="w-full h-full object-cover" loading="lazy" width="300" height="300" />
                 </div>
                 <h3 class="text-xl font-semibold">{m.name}</h3>
                 <p class="text-gray-700 mb-2">{m.role}</p>

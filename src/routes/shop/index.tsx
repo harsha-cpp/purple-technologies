@@ -50,7 +50,7 @@ export default component$(() => {
               {items().map((item) => (
                 <div key={item.id} class="rounded-xl border border-gray-200 bg-white overflow-hidden">
                   <div class="aspect-square bg-gray-50">
-                    <img src={item.image} alt={item.name} class="w-full h-full object-cover" loading="lazy" />
+                    <img src={item.image} alt={item.name} class="w-full h-full object-cover" loading="lazy" width="300" height="300" />
                   </div>
                   <div class="p-6">
                     <span class="inline-block text-xs px-2 py-1 rounded-md bg-gray-100 text-gray-700 border border-gray-200 mb-2">{item.category}</span>

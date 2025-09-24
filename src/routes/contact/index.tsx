@@ -1,12 +1,12 @@
-import { component$, useSignal } from '@builder.io/qwik';
+import { component$, useSignal, $ } from '@builder.io/qwik';
 import Button from '~/components/ui/button';
 
 export default component$(() => {
   const form = useSignal({ name: '', email: '', company: '', subject: '', message: '' });
 
-  const onSubmit$ = () => {
+  const onSubmit$ = $(() => {
     console.log('Form submitted:', form.value);
-  };
+  });
 
   return (
     <div class="min-h-screen bg-white text-gray-900">

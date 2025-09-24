@@ -5,6 +5,7 @@ export default component$(() => {
   const showFooterFlow = useSignal(false);
 
   // Equivalent to useEffect for scroll detection
+  // eslint-disable-next-line qwik/no-use-visible-task
   useVisibleTask$(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;

@@ -51,7 +51,7 @@ export default component$(() => {
               <div class="flex-1 space-y-6 max-w-lg">
                 <div class="flex items-center gap-4">
                   <div class="w-16 h-16 rounded-2xl bg-gray-900 text-white flex items-center justify-center">
-                    <img src={app.appIcon} alt={`${app.name} icon`} class="w-12 h-12 rounded-xl" loading="lazy" />
+                    <img src={app.appIcon} alt={`${app.name} icon`} class="w-12 h-12 rounded-xl" loading="lazy" width="80" height="80" />
                   </div>
                   <div>
                     <span class="inline-block text-xs px-2 py-1 rounded-md bg-gray-100 text-gray-700 border border-gray-200">{app.category}</span>
@@ -85,7 +85,7 @@ export default component$(() => {
               </div>
               <div class="flex-1">
                 <div class="rounded-xl border border-gray-200 p-6 bg-white">
-                  <img src={app.screenshot} alt="App Screenshot" class="w-full h-auto rounded-lg" loading="lazy" />
+                  <img src={app.screenshot} alt="App Screenshot" class="w-full h-auto rounded-lg" loading="lazy" width="600" height="400" />
                 </div>
               </div>
             </div>

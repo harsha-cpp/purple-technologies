@@ -1,5 +1,5 @@
 import { component$ } from '@builder.io/qwik';
-import { Link, type RequestHandler, type DocumentHead, useLocation } from '@builder.io/qwik-city';
+import { Link, useLocation } from '@builder.io/qwik-city';
 import Button from '~/components/ui/button';
 
 const blogPosts = [
@@ -34,7 +34,7 @@ export default component$(() => {
               <span class="font-medium">{post.author}</span><span>•</span><span>{post.date}</span><span>•</span><span>{post.readTime}</span>
             </div>
             <div class="aspect-video bg-gray-50 rounded-xl overflow-hidden mt-8">
-              <img src={post.image} alt={post.title} class="w-full h-full object-cover" loading="lazy" />
+              <img src={post.image} alt={post.title} class="w-full h-full object-cover" loading="lazy" width="800" height="400" />
             </div>
           </header>
           <div class="prose max-w-none" dangerouslySetInnerHTML={post.content} />

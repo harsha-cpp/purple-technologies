@@ -126,6 +126,8 @@ export default component$(() => {
                       alt={product.name}
                       class="w-full h-full object-cover"
                       loading="lazy"
+                      width="300"
+                      height="200"
                     />
                   </div>
                   <div class="p-6">

@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { Link } from "@builder.io/qwik-city";
+import ImgPlaceholder from '~/media/placeholder.svg?jsx';
 
 export default component$(() => {
   return (
@@ -80,9 +81,7 @@ export default component$(() => {
               </Link>
             </div>
             <div class="rounded-xl border border-gray-200 p-6 bg-white shadow-lg">
-              <img 
-                src="/placeholder.svg" 
-                alt="Brand Customization" 
+              <ImgPlaceholder 
                 class="w-full h-auto rounded-lg" 
               />
             </div>
