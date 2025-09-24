@@ -7,15 +7,10 @@
  * - https://qwik.dev/docs/deployments/vercel-edge/
  *
  */
-import {
-  createQwikCity,
-  type PlatformVercel,
-} from "@builder.io/qwik-city/middleware/vercel-edge";
+import { createQwikCity } from "@builder.io/qwik-city/middleware/vercel-edge";
 import qwikCityPlan from "@qwik-city-plan";
 import render from "./entry.ssr";
 
-declare global {
-  interface QwikCityPlatform extends PlatformVercel {}
-}
+// QwikCityPlatform is automatically inferred from PlatformVercel
 
 export default createQwikCity({ render, qwikCityPlan });
