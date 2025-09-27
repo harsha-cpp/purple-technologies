@@ -14,7 +14,7 @@ export default component$(() => {
 
   return (
     <div class="min-h-screen bg-white text-gray-900">
-      <section class="py-24 px-6 border-b border-gray-200">
+      <section class="py-24 px-5 border-b border-gray-200">
         <div class="max-w-7xl mx-auto text-center">
           <span class="inline-block text-xs px-2 py-1 rounded-md bg-gray-100 text-gray-700 border border-gray-200 mb-4">Blog</span>
           <h1 class="text-4xl md:text-6xl font-bold mb-4">Insights & Innovation</h1>
@@ -22,7 +22,7 @@ export default component$(() => {
         </div>
       </section>
 
-      <section class="px-6 py-16">
+      <section class="px-5 py-16">
         <div class="max-w-7xl mx-auto space-y-12">
           {featuredPost && (
             <div class="rounded-xl border border-gray-200 p-8 lg:p-12 bg-white">

@@ -47,7 +47,7 @@ const solutions = [
 export default component$(() => {
   return (
     <div class="min-h-screen bg-white text-gray-900">
-      <section class="px-6 py-24 border-b border-gray-200 text-center">
+      <section class="px-5 py-24 border-b border-gray-200 text-center">
         <div class="max-w-7xl mx-auto">
           <h1 class="text-4xl md:text-6xl font-bold mb-4">Our IoT Development Solutions</h1>
           <p class="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -56,7 +56,7 @@ export default component$(() => {
         </div>
       </section>
 
-      <section class="px-6 py-16">
+      <section class="px-5 py-16">
         <div class="max-w-7xl mx-auto space-y-24">
           {solutions.map((s, idx) => (
             <div key={s.id} class={{ 'flex flex-col items-center gap-10': true, 'lg:flex-row': idx % 2 === 0, 'lg:flex-row-reverse': idx % 2 === 1 }}>

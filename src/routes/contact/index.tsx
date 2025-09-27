@@ -10,7 +10,7 @@ export default component$(() => {
 
   return (
     <div class="min-h-screen bg-white text-gray-900">
-      <section class="py-24 px-6 border-b border-gray-200 text-center">
+      <section class="py-24 px-5 border-b border-gray-200 text-center">
         <div class="max-w-7xl mx-auto">
           <span class="inline-block text-xs px-2 py-1 rounded-md bg-gray-100 text-gray-700 border border-gray-200 mb-4">Contact Us</span>
           <h1 class="text-4xl md:text-6xl font-bold mb-4">Get in Touch</h1>
@@ -18,7 +18,7 @@ export default component$(() => {
         </div>
       </section>
 
-      <section class="px-6 py-16">
+      <section class="px-5 py-16">
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div class="rounded-xl border border-gray-200 p-8 bg-white">
             <h2 class="text-2xl font-bold mb-6">Send us a Message</h2>

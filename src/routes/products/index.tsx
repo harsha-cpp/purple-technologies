@@ -83,7 +83,7 @@ export default component$(() => {
 
   return (
     <div class="min-h-screen bg-white text-gray-900">
-      <section class="px-6 py-24 border-b border-gray-200">
+      <section class="px-5 py-24 border-b border-gray-200">
         <div class="max-w-7xl mx-auto text-center">
           <h1 class="text-4xl md:text-6xl font-bold mb-4">Explore Our IoT Products</h1>
           <p class="text-gray-600 text-lg max-w-3xl mx-auto">
@@ -92,7 +92,7 @@ export default component$(() => {
         </div>
       </section>
 
-      <section class="px-6 py-16">
+      <section class="px-5 py-16">
         <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-8">
           <aside class="lg:w-64 flex-shrink-0">
             <div class="rounded-xl border border-gray-200 p-6 sticky top-24">
@@ -103,9 +103,9 @@ export default component$(() => {
                     key={c}
                     onClick$={() => (selectedCategory.value = c)}
                     class={{
-                      'w-full text-left px-4 py-2 rounded-lg transition-colors border border-gray-300 bg-white':
+                      'w-full text-left px-4 py-2 rounded-lg transition-colors border border-[#2563EB] bg-[#EFF6FF] text-[#2563EB]':
                         selectedCategory.value === c,
-                      'w-full text-left px-4 py-2 rounded-lg transition-colors text-gray-600 hover:bg-gray-50':
+                      'w-full text-left px-4 py-2 rounded-lg transition-colors text-[#2563EB] hover:bg-[#EFF6FF]':
                         selectedCategory.value !== c,
                     }}
                   >

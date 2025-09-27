@@ -37,7 +37,7 @@ export default component$(() => {
     <header class={{
       'sticky top-0 z-50 transition-colors bg-white/90 backdrop-blur border-b border-gray-100': true,
     }}>
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto px-3 sm:px-5 lg:px-7">
         <div class="flex items-center justify-between h-16">
           {/* Logo and version */}
           <div class="flex items-center gap-2">
@@ -47,14 +47,14 @@ export default component$(() => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav class="hidden md:flex items-center gap-6 ml-auto">
+          <nav class="hidden md:flex items-center gap-4 ml-auto">
             {navLinks.map((l) => (
               <Link
                 key={l.href}
                 href={l.href}
                 class={isActive(l.href)
-                  ? 'text-[#5E4FDB] font-semibold'
-                  : 'text-gray-600 hover:text-[#5E4FDB] transition-colors'}
+                  ? 'text-[#2563EB] font-semibold'
+                  : 'text-gray-600 hover:text-[#2563EB] transition-colors'}
               >
                 {l.label}
               </Link>
@@ -65,7 +65,7 @@ export default component$(() => {
           {/* Mobile menu button */}
           <button 
             onClick$={() => mobileMenuOpen.value = !mobileMenuOpen.value}
-            class="md:hidden flex items-center p-2 rounded-md text-gray-600 hover:text-[#5E4FDB] hover:bg-gray-100"
+            class="md:hidden flex items-center p-2 rounded-md text-gray-600 hover:text-[#2563EB] hover:bg-gray-100"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               {mobileMenuOpen.value 
@@ -91,8 +91,8 @@ export default component$(() => {
                 key={l.href}
                 href={l.href}
                 class={isActive(l.href) 
-                  ? "text-[#5E4FDB] font-medium px-3 py-2 rounded-md" 
-                  : "text-gray-600 hover:text-[#5E4FDB] px-3 py-2 rounded-md hover:bg-gray-50"}
+                  ? "text-[#2563EB] font-medium px-3 py-2 rounded-md" 
+                  : "text-gray-600 hover:text-[#2563EB] px-3 py-2 rounded-md hover:bg-gray-50"}
                 onClick$={() => mobileMenuOpen.value = false}
               >
                 {l.label}

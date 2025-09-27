@@ -10,10 +10,9 @@ export type ButtonProps = {
 };
 
 const variantClasses: Record<NonNullable<ButtonProps['variant']>, string> = {
-  default: 'bg-gray-900 text-white hover:bg-black',
-  outline:
-    'border border-gray-300 text-gray-900 bg-white hover:bg-gray-50',
-  ghost: 'text-gray-900 hover:bg-gray-100',
+  default: 'bg-[#2563EB] text-white hover:bg-[#1E40AF]',
+  outline: 'border border-[#2563EB] text-[#2563EB] bg-white hover:bg-[#EFF6FF]',
+  ghost: 'text-[#2563EB] hover:bg-[#EFF6FF]',
 };
 
 const sizeClasses: Record<NonNullable<ButtonProps['size']>, string> = {

@@ -35,7 +35,7 @@ const apps = [
 export default component$(() => {
   return (
     <div class="min-h-screen bg-white text-gray-900">
-      <section class="px-6 py-24 text-center border-b border-gray-200">
+      <section class="px-5 py-24 text-center border-b border-gray-200">
         <div class="max-w-7xl mx-auto">
           <h1 class="text-4xl md:text-6xl font-bold mb-4">IoT Apps for Seamless Connectivity</h1>
           <p class="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -44,7 +44,7 @@ export default component$(() => {
         </div>
       </section>
 
-      <section class="px-6 py-16">
+      <section class="px-5 py-16">
         <div class="max-w-5xl mx-auto space-y-16">
           {apps.map((app) => (
             <div key={app.id} class="flex flex-col lg:flex-row items-center gap-8">
@@ -93,7 +93,7 @@ export default component$(() => {
         </div>
       </section>
 
-      <section class="px-6 py-20">
+      <section class="px-5 py-20">
         <div class="max-w-4xl mx-auto text-center rounded-xl border border-gray-200 p-12 bg-white">
           <h2 class="text-3xl font-semibold mb-4">Ready to Get Started?</h2>
           <p class="text-gray-600 mb-6">Download our apps and start managing your IoT ecosystem today.</p>

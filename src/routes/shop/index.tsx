@@ -34,8 +34,10 @@ export default component$(() => {
                     key={c}
                     onClick$={() => (selected.value = c)}
                     class={{
-                      'w-full text-left px-4 py-2 rounded-lg transition-colors border border-gray-300 bg-white': selected.value === c,
-                      'w-full text-left px-4 py-2 rounded-lg transition-colors text-gray-600 hover:bg-gray-50': selected.value !== c,
+                      'w-full text-left px-4 py-2 rounded-lg transition-colors border border-[#2563EB] bg-[#EFF6FF] text-[#2563EB]':
+                        selected.value === c,
+                      'w-full text-left px-4 py-2 rounded-lg transition-colors text-[#2563EB] hover:bg-[#EFF6FF]':
+                        selected.value !== c,
                     }}
                   >
                     {c}
