@@ -20,6 +20,26 @@ export default component$(() => {
 
       <section class="px-5 py-16">
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div class="space-y-8">
+            <div class="rounded-xl border border-gray-200 p-6 bg-white">
+              <h3 class="text-xl font-semibold mb-4">Office Location</h3>
+              <p class="text-gray-600 text-sm">Mullapudi Venkateswara Rao St<br/>Labbipet, Vijayawada, AP 520010<br/>India</p>
+            </div>
+            <div class="rounded-xl border border-gray-200 p-6 bg-white">
+              <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+              <p class="text-gray-600"><span class="text-gray-500">Email:</span> info@purpletechnosolutions.in</p>
+              <p class="text-gray-600"><span class="text-gray-500">Phone:</span> +91 93469 34969</p>
+            </div>
+            <div class="rounded-xl border border-gray-200 p-6 bg-white">
+              <h3 class="text-xl font-semibold mb-4">Business Hours</h3>
+              <div class="space-y-2 text-sm text-gray-700">
+                <div class="flex justify-between"><span>Monday - Friday:</span><span>9:00 AM - 6:00 PM</span></div>
+                <div class="flex justify-between"><span>Saturday:</span><span>10:00 AM - 4:00 PM</span></div>
+                <div class="flex justify-between"><span>Sunday:</span><span>Closed</span></div>
+              </div>
+            </div>
+          </div>
+
           <div class="rounded-xl border border-gray-200 p-8 bg-white">
             <h2 class="text-2xl font-bold mb-6">Send us a Message</h2>
             <form preventdefault:submit onSubmit$={onSubmit$} class="space-y-6">
@@ -55,26 +75,6 @@ export default component$(() => {
               <Button type="submit" class="w-full">Send Message</Button>
               <p class="text-center text-gray-600 text-sm">We'll get back to you within 24 hours!</p>
             </form>
-          </div>
-
-          <div class="space-y-8">
-            <div class="rounded-xl border border-gray-200 p-6 bg-white">
-              <h3 class="text-xl font-semibold mb-4">Office Location</h3>
-              <p class="text-gray-600 text-sm">Mullapudi Venkateswara Rao St<br/>Labbipet, Vijayawada, AP 520010<br/>India</p>
-            </div>
-            <div class="rounded-xl border border-gray-200 p-6 bg-white">
-              <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
-              <p class="text-gray-600"><span class="text-gray-500">Email:</span> info@purpletechnosolutions.in</p>
-              <p class="text-gray-600"><span class="text-gray-500">Phone:</span> +91 93469 34969</p>
-            </div>
-            <div class="rounded-xl border border-gray-200 p-6 bg-white">
-              <h3 class="text-xl font-semibold mb-4">Business Hours</h3>
-              <div class="space-y-2 text-sm text-gray-700">
-                <div class="flex justify-between"><span>Monday - Friday:</span><span>9:00 AM - 6:00 PM</span></div>
-                <div class="flex justify-between"><span>Saturday:</span><span>10:00 AM - 4:00 PM</span></div>
-                <div class="flex justify-between"><span>Sunday:</span><span>Closed</span></div>
-              </div>
-            </div>
           </div>
         </div>
       </section>

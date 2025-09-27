@@ -40,7 +40,7 @@ export default component$(() => {
               </li>
               <li>
                 <Link href="/solutions" class="font-medium hover:text-[#2563EB] transition-colors duration-300">
-                  Solutions
+                  Services
                 </Link>
               </li>
               <li>
