@@ -3,11 +3,11 @@ import { Link, useLocation } from '@builder.io/qwik-city';
 
 const navLinks = [
   { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
   { href: '/products', label: 'Products' },
   { href: '/solutions', label: 'Services' },
   { href: '/apps', label: 'Apps' },
   { href: '/shop', label: 'Shop' },
-  { href: '/about', label: 'About' },
   { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact' },
 ];
