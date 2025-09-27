@@ -109,7 +109,7 @@ export default component$(() => {
 
         {/* Large watermark text */}
         <div class="relative text-center py-16">
-          <div class="text-[8vw] font-bold text-gray-100 leading-none select-none">Purple Technologies</div>
+          <div class="text-[8vw] font-bold text-blue-300 leading-none select-none">Purple Technologies</div>
         </div>
       </div>
     </footer>
