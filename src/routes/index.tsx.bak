@@ -1,19 +1,8 @@
-import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { Link } from "@builder.io/qwik-city";
 import ImgPlaceholder from '~/media/placeholder.svg?jsx';
 import AnnouncementPill from '~/components/announcement-pill';
 import TrustedPartners from '~/components/trusted-partners';
-
-export default component$(() => {
-  return (
-    <div class="min-h-screen bg-white text-gray-900">
-      {/* Hero */}
-      <section class="relative overflow-hidden min-h-[calc(100vh-64px)] flex items-center px-5 text-white">
-        <div class="absolute inset-0"></div>
-        
-        {/* Premium grid background */}
-        <div class="grid-background">
           {Array.from({ length: 36 }).map((_, i) => (
             <div key={i}></div>
           ))}
@@ -49,7 +38,20 @@ export default component$(() => {
         </div>
       </section>
 
-      <TrustedPartners />
+      {/* Trusted Partners */}
+      <section class="px-5 py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto text-center space-y-8">
+          <div class="text-[#2563EB] text-sm font-semibold tracking-wider">SOME TRUSTED PARTNERS</div>
+          <h2 class="text-3xl md:text-4xl font-semibold mb-12">The globe's top reliable enterprise</h2>
+          <div class="flex flex-wrap justify-center items-center gap-12">
+            {Array.from({ length: 5 }).map((_, i) => (
+              <div key={i} class="grayscale opacity-50 hover:opacity-100 transition-opacity">
+                <div class="h-8 w-24 bg-gray-200 rounded"></div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Features */}
       <section class="px-5 py-24">
@@ -60,8 +62,7 @@ export default component$(() => {
               <h2 class="text-3xl md:text-4xl font-semibold">Smarter Solutions for a Connected Tomorrow</h2>
               <p class="text-gray-600">
                 At Purple Technologies, we are redefining the way the world connects through the power of the Internet of Things. As a forward-thinking IoT solutions company, we specialize in creating intelligent systems that bridge the gap between the physical and digital worlds.
-              </p>
-              <p class="text-gray-600">
+
                 Our team of innovators, engineers, and problem-solvers is passionate about building technology that makes everyday life smarter, safer, and more efficient. From smart devices and connected platforms to end-to-end IoT ecosystems, we deliver solutions that help businesses and communities thrive in a connected future.
               </p>
               <Link href="/products" class="btn-primary inline-block">
@@ -84,6 +85,7 @@ export default component$(() => {
           <h2 class="text-3xl md:text-4xl font-semibold mb-6">Our global impact</h2>
           <p class="text-gray-600 max-w-2xl mx-auto">
             Empowering startups worldwide with tailored solutions, trusted by thousands to deliver success and growth.
+g startups worldwide with tailored solutions, trusted by thousands to deliver success and growth.
           </p>
           
           <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
@@ -111,8 +113,32 @@ export default component$(() => {
         </div>
       </section>
 
+      {/* Integrations */}
+      <section class="px-6 py-24">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="space-y-6">
+              <div class="text-[#2563EB] text-sm font-semibold tracking-wider">KEY HIGHLIGHTS</div>
+              <h2 class="text-3xl md:text-4xl font-semibold">Our Core Strengths</h2>
+              <p class="text-gray-600">
+                At Purple Technologies, our strength lies in three core areas: IoT solutions that empower industries with smarter, connected systems for efficiency and automation; IT services that ensure seamless operations, security, and scalability tailored to business needs; and R&D excellence, where our innovation-driven team explores new frontiers to build future-ready technologies.
+              </p>
+            </div>
+            <div class="grid grid-cols-3 gap-4">
+              {Array.from({ length: 9 }).map((_, i) => (
+                <div key={i} class="aspect-square rounded-xl bg-[#2563EB]/5 flex items-center justify-center">
+                  <div class="w-10 h-10 rounded-full bg-[#2563EB]/20 flex items-center justify-center">
+                    <div class="w-6 h-6 rounded-full bg-[#2563EB]"></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features Grid */}
-      <section class="px-5 py-24 bg-white">
+      <section class="px-5 py-24 bg-gray-50">
         <div class="max-w-6xl mx-auto space-y-12">
           <div class="text-center space-y-4">
             <div class="text-[#2563EB] text-sm font-semibold tracking-wider">WHY CHOOSE US</div>
@@ -163,7 +189,7 @@ export default component$(() => {
                 </div>
                 <h3 class="text-xl font-semibold">Your Idea, Our Expertise</h3>
                 <p class="text-gray-600">
-                  A collaborative approach where we combine your vision with our technical expertise to bring innovations to life. We build solutions that are practical and scalable.
+                  A collaborative approach where we combine your vision with our technical expertise to bring innovations to life. We build solutions that are practical and scal.
                 </p>
               </div>
             </div>
@@ -172,7 +198,7 @@ export default component$(() => {
       </section>
 
       {/* CTA */}
-      <section class="px-6 py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white relative">
+      <section class="px-6 py-16 gradient-hero text-white relative">
         <div class="absolute inset-0 opacity-20">
           <div class="grid grid-cols-6 grid-rows-6 h-full w-full">
             {Array.from({ length: 36 }).map((_, i) => (
@@ -181,14 +207,15 @@ export default component$(() => {
           </div>
         </div>
         <div class="max-w-4xl mx-auto text-center space-y-4 relative z-10">
-          <div class="text-blue-200 text-sm font-semibold tracking-wider">CONTACT US</div>
-          <h2 class="text-2xl md:text-3xl font-semibold">Ready to Transform Your Business?</h2>
-          <p class="text-white/80 max-w-2xl mx-auto">
-            Let's discuss how our IoT solutions can help you achieve your business goals. Get in touch with our experts today.
+          <div class="text-[#2563EB]/80 text-sm font-semibold tracking-wider">CONTACT US</div>
+          <h2 class="text-2xl md:text-3xl font-semibold">Let’s Build the Future Together</h2>
+          <p class="text-white/80 max-w-2xl mx-auto text-sm md:text-base">
+            Partner with Purple Technologies to turn your IoT vision into reality.
+            Trusted by startups, enterprises, and innovators to deliver reliable and scalable solutions.
           </p>
           <div class="flex justify-center gap-4 pt-3">
-            <Link href="/contact" class="text-blue-600 bg-white hover:bg-gray-100 px-6 py-2 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
-              Contact Us
+            <Link href="/contact" class="text-white bg-[#2563EB] hover:bg-gray-100 px-6 py-2 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+              Contact
             </Link>
           </div>
         </div>
@@ -203,7 +230,7 @@ export const head: DocumentHead = {
     {
       name: "description",
       content:
-        "Purple Technologies provides cutting-edge IoT solutions powered by AI/ML to help businesses transform and grow in the digital age.",
+        "Fast Qwik site for Purple Technologies with AI/ML powered IoT solutions.",
     },
   ],
 };

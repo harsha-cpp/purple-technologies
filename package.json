@@ -24,6 +24,8 @@
     "qwik": "qwik"
   },
   "devDependencies": {
+    "@babel/plugin-syntax-jsx": "^7.27.1",
+    "@babel/plugin-transform-react-jsx": "^7.27.1",
     "@builder.io/qwik": "^1.16.0",
     "@builder.io/qwik-city": "^1.16.1",
     "@eslint/js": "latest",
@@ -42,5 +44,8 @@
     "vercel": "^29.1.1",
     "vite": "7.1.0",
     "vite-tsconfig-paths": "^4.2.1"
+  },
+  "dependencies": {
+    "motion": "^12.23.22"
   }
 }
