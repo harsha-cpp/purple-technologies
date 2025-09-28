@@ -12,12 +12,6 @@ export default component$(() => {
       <section class="relative overflow-hidden min-h-[calc(100vh-64px)] flex items-center px-5 text-white">
         <div class="absolute inset-0"></div>
         
-        {/* Premium grid background */}
-        <div class="grid-background">
-          {Array.from({ length: 36 }).map((_, i) => (
-            <div key={i}></div>
-          ))}
-        </div>
         
         <div class="max-w-5xl mx-auto text-center space-y-4 relative z-10 py-10">
           <div class="mb-4 flex justify-center">
@@ -172,22 +166,15 @@ export default component$(() => {
       </section>
 
       {/* CTA */}
-      <section class="px-6 py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white relative">
-        <div class="absolute inset-0 opacity-20">
-          <div class="grid grid-cols-6 grid-rows-6 h-full w-full">
-            {Array.from({ length: 36 }).map((_, i) => (
-              <div key={i} class="border border-white/20"></div>
-            ))}
-          </div>
-        </div>
+      <section class="px-6 py-16 bg-white text-gray-900 relative">
         <div class="max-w-4xl mx-auto text-center space-y-4 relative z-10">
-          <div class="text-blue-200 text-sm font-semibold tracking-wider">CONTACT US</div>
+          <div class="text-[#2563EB] text-sm font-semibold tracking-wider">CONTACT US</div>
           <h2 class="text-2xl md:text-3xl font-semibold">Ready to Transform Your Business?</h2>
-          <p class="text-white/80 max-w-2xl mx-auto">
+          <p class="text-gray-600 max-w-2xl mx-auto">
             Let's discuss how our IoT solutions can help you achieve your business goals. Get in touch with our experts today.
           </p>
           <div class="flex justify-center gap-4 pt-3">
-            <Link href="/contact" class="text-blue-600 bg-white hover:bg-gray-100 px-6 py-2 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+            <Link href="/contact" class="bg-[#2563EB] text-white hover:bg-[#1D4ED8] px-6 py-2 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
               Contact Us
             </Link>
           </div>
